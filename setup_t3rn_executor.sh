@@ -10,8 +10,8 @@ sudo apt install -y build-essential git screen wget || { echo "Failed to install
 
 # Download and extract the latest executor binary
 echo "Downloading and extracting T3rn executor..."
-wget -q --show-progress https://github.com/t3rn/executor-release/releases/download/v0.53.1/executor-linux-v0.53.1.tar.gz || { echo "Download failed"; exit 1; }
-tar -xvzf executor-linux-v0.53.1.tar.gz || { echo "Extraction failed"; exit 1; }
+wget -q --show-progress https://github.com/t3rn/executor-release/releases/download/v0.61.0/executor-linux-v0.61.0.tar.gz || { echo "Download failed"; exit 1; }
+tar -xvzf executor-linux-v0.61.1.tar.gz || { echo "Extraction failed"; exit 1; }
 cd executor/executor/bin || { echo "Directory change failed"; exit 1; }
 
 # Export environment variables
@@ -28,7 +28,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE=3000
 # Add RPC endpoints
 echo "Configuring RPC endpoints..."
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http"],
+    "l2rn": ["https://b2n.rpc.caldera.xyz/http", https://t3rn-b2n.blockpi.network/v1/rpc/dcc2674b2e1b7b69471544611ded0fe2b9f265b3"],
     "arbt": ["https://arbitrum-sepolia.drpc.org", "https://sepolia-rollup.arbitrum.io/rpc"],
     "bast": ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
     "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"],
