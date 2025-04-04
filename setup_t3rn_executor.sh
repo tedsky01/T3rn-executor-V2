@@ -28,7 +28,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE=3000
 # Add RPC endpoints
 echo "Configuring RPC endpoints..."
 export RPC_ENDPOINTS='{
-    "l2rn": ["https://b2n.rpc.caldera.xyz/http", https://t3rn-b2n.blockpi.network/v1/rpc/dcc2674b2e1b7b69471544611ded0fe2b9f265b3"],
+    "l2rn": ["https://b2n.rpc.caldera.xyz/http", https://t3rn-b2n.blockpi.network/v1/rpc/"],
     "arbt": ["https://arbitrum-sepolia.drpc.org", "https://sepolia-rollup.arbitrum.io/rpc"],
     "bast": ["https://base-sepolia-rpc.publicnode.com", "https://base-sepolia.drpc.org"],
     "blst": ["https://sepolia.blast.io", "https://blast-sepolia.drpc.org"],
