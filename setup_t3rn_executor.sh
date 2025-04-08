@@ -10,7 +10,7 @@ sudo apt install -y build-essential git screen wget || { echo "Failed to install
 
 # Download and extract the latest executor binary
 echo "Downloading and extracting T3rn executor..."
-wget -q --show-progress https://github.com/t3rn/executor-release/releases/download/v0.53.1/executor-linux-v0.62.0.tar.gz || { echo "Download failed"; exit 1; }
+wget -q --show-progress https://github.com/t3rn/executor-release/releases/download/v0.62.0/executor-linux-v0.62.0.tar.gz || { echo "Download failed"; exit 1; }
 tar -xvzf executor-linux-v0.62.0.tar.gz || { echo "Extraction failed"; exit 1; }
 cd executor/executor/bin || { echo "Directory change failed"; exit 1; }
 
